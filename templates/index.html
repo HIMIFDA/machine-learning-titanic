@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Machine Learning</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<script type="text/javascript" src="/static/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body id="particles-js">
+
+	<div class="container main">
+		
+		<div class="col-md-12">
+			
+			<div class="col-md-4"></div>		
+			<div class="col-md-4 form-container">
+
+
+				<h2 class="form-wording">Would you survive?</h2>
+				  <form id="form-predict">
+				    <div class="form-group">
+				      <label for="class">Class:</label>
+				      <select name="class" class="form-control">
+				      		<option> ------- Class ------- </option>
+				      		<option value="1">1</option>
+				      		<option value="2">2</option>
+				      		<option value="3">3</option>
+				      </select>
+				    </div>
+				    <div class="form-group">
+				      <label for="age">Age:</label>
+				      <input type="number" name="age" class="form-control" id="age" placeholder="Age">
+				    </div>
+				    <div class="form-group">
+				      <label for="sex">Sex:</label>
+				      <select name="sex" class="form-control">
+				      		<option> ------- Sex ------- </option>
+				      		<option value="0">Female</option>
+				      		<option value="1">Male</option>
+				      </select>
+				    </div>
+				    <button type="submit" class="btn btn-default">Submit</button>
+				  </form>
+
+
+			</div>		
+			<div class="col-md-4"></div>		
+	
+		</div>
+
+	</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="alive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="form-wording" id="myModalLabel">YOU SURVIVED</h4>
+	      </div>
+	      <div class="modal-body">
+			<h5>Percentage alive: <b><span class="percentage_alive"></span></b></h5>
+			<h5>Percentage dead: <b><span class="percentage_dead"></span></b></h5>
+	        <img src="/static/alive.gif" width="100%">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="dead" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="form-wording" id="myModalLabel">YOU DIED</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h5>Percentage alive: <b><span class="percentage_alive"></span></b></h5>
+	      	<h5>Percentage dead: <b><span class="percentage_dead"></span></b></h5>
+	        <img src="/static/dead.gif" width="100%">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<script type="text/javascript" src="/static/particles.min.js"></script>
+	<script type="text/javascript" src="/static/particles-conf.js"></script>
+	<script type="text/javascript" src="/static/app.js"></script>
+</body>
+</html>
