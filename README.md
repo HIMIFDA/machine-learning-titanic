@@ -1,4 +1,4 @@
-# Simple Implementation of Machine Learning Using Softmax Regression.
+# Simple implementation of machine learning using softmax regression.
 
 
 Pada 14 april 1912 di Southampton, kapal titanic menarik jangkarnya dan melakukan ekspedisi pertamanya menuju New York City. Titanic merupakan kapal terbesar yang beroperasi pada masa itu, mengangkut sekitar 2.224 orang. Kapal yang digadang-gadang tidak bisa tenggelam ini sayangnya malah menabrak gunung es pada pukul 23:40. Kapal ini tenggelam dua jam empat puluh menit kemudian pada pukul 02:20 hari Minggu, 15 April (05:18 GMT) dan mengakibatkan kematian lebih dari 1.500 penumpangnya. Tenggelamnya Titanic adalah salah satu bencana maritim masa damai mematikan sepanjang sejarah.
