@@ -39,11 +39,13 @@ X_train, X_test, y_train, y_test = train_test_split(dataset_X, dataset_y, test_s
 # Constructing Dataflow Graph
 ################################
 
-# create symbolic variables
+# define placeholder for our features and labels
+# X is None x 3 dimensional matrix
+# y is None x 2 dimensional matrix
 X = tf.placeholder(tf.float32, shape=[None, 3])
 y = tf.placeholder(tf.float32, shape=[None, 2])
 
-# weights and bias are the variables to be trained
+# define our weights and bias
 weights = tf.Variable(tf.random_normal([3, 2]))
 bias = tf.Variable(tf.zeros([2]))
 hypothesis = tf.nn.softmax(tf.add(tf.matmul(X, weights), bias))
@@ -89,22 +91,18 @@ with tf.Session() as sess:
         # display loss per epoch
         print('Epoch: %04d, total loss=%.9f' % (epoch + 1, total_loss))
 
-    # Accuracy calculated by TensorFlow
+    # Accuracy
     accuracy_pred = sess.run(accuracy, feed_dict={X: X_test, y: y_test})
     print("Accuracy on validation set: %.9f" % accuracy_pred)
 
-    # Accuracy calculated by NumPy
-    pred = sess.run(hypothesis, feed_dict={X: X_test})
-    correct = sess.run(tf.equal(tf.argmax(pred, 1), tf.argmax(y_test, 1)))
-    numpy_accuracy = sess.run(tf.reduce_mean(tf.cast(correct, tf.float32)))
-    print("Accuracy on validation set (numpy): ", numpy_accuracy)
-
+    # test our model 
     print("=================================")
     bingo = sess.run(hypothesis, feed_dict={X: [[0., 5., 1.]]})
     print("bingo: ", np.argmax(bingo,1))
     print("bingo: ", bingo)
     print("=================================")
 
-    #save_path = saver.save(sess, "tmp/model.ckpt")
+    
+    # save our model
+    # we save our model so that we can use that on production
     saver.save(sess, 'model/titanic_softmax')
-    #print("Model saved in file: %s" % save_path)
