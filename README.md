@@ -50,7 +50,7 @@ Beruntunglah mereka yang berusia lebih muda, karna setelah kita melihat dan meng
 ### Machine Learning
 *Machine learning* merupakan subset dari *artificial intelligence*, *machine learning* merupakan teknik mengintruksikan komputer untuk bertindak tanpa perlu di program secara eksplisit.  Atau, penjelasan lebih detailnya seperti ini:
 
-    Sebuah program komputer dikatakan belajar dari pengalaman E yang berhubungan dengan tugas T dan mengukur kinerja P jika kinerjanya pada T, yang diukur dengan P, ditingkatkan dengan pengalaman E. Misalkan kita makan algoritma pembelajaran banyak data historis. 
+    Sebuah program komputer dikatakan belajar dari pengalaman E yang berhubungan dengan tugas T dan mengukur kinerja P jika kinerjanya pada T, yang diukur dengan P, ditingkatkan dengan pengalaman E.
     Dalam contoh kasus titanic, apa P, T dan E?
     
     Answer
