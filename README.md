@@ -1,4 +1,4 @@
-# Simple Implementation of Machine Learning Using Logistic Regression.
+# Simple Implementation of Machine Learning Using Softmax Regression.
 
 
 ### Pendahuluan
