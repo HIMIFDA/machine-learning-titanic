@@ -18,7 +18,7 @@ Sepertinya pada saat kapal mewah ini tenggelam, penumpang dengan jenis kelamin p
  - Kelas 2
        Perempuan:  88%
        Laki-laki: 14%
- - Kelas 1
+ - Kelas 3
       Perempuan:  49%
       Laki-laki: 15%
 
@@ -38,7 +38,7 @@ Beruntunglah mereka yang berusia lebih muda, karna setelah kita melihat dan meng
        Laki-laki:
 	       - Di bawah 25 tahun: 36%
 	       - Di atas 25 tahun: 7%
-- Kelas 1
+- Kelas 3
       Perempuan:
 	       - Di bawah 25 tahun: 52%
 	       - Di atas 25 tahun: 44%
